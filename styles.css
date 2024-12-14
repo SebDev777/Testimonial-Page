@@ -1,5 +1,6 @@
 body {
   font-family: "Sora";
+  background-color: #FAFAF9;
 }
 
 .heading-txt {
@@ -68,6 +69,7 @@ main {
     width: 400px;
     height: 200px;
     border-radius: 15px;
+    background-color: #FFFFFF;
 }
 
 .card-text {
