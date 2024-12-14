@@ -1,0 +1,139 @@
+body {
+  font-family: "Sora";
+}
+
+.heading-txt {
+  font-size: 2.25rem;
+  color: #18181b;
+  font-weight: 600;
+}
+
+.body-txt {
+  font-size: 1.25rem;
+  color: #52525a;
+  font-weight: 400;
+}
+
+.body2-txt {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style: url("/resources/Done_ring_round_fill.svg");
+  margin-top: 5vh;
+}
+
+li {
+  font-size: 0.875rem;
+  color: #52525a;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 2vh;
+}
+
+li span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.content-section {
+    width: 40vw;
+    margin-top: 20vh;
+}
+
+.testimonials-section {
+    width: 60vw;
+    margin-top: 20vh;
+    margin-right: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5vh;
+}
+
+.content-section {
+    margin-left: 5vw
+}
+
+.testimonial-card {
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+    width: 90%;
+    height: 80px;
+
+}
+
+.testimonial-card-content {
+    margin-left: 10%;
+}
+
+.testimonial-card:nth-child(odd) {
+    margin-left: 35%
+}
+
+.testimonial-img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.testimonial-stars {
+    margin-left: 10%;
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1%;
+}
+
+@media (max-width: 700px) {
+    main {
+        display: block;
+        gap: 0;
+    }
+
+    .testimonial-card:nth-child(odd) {
+        margin-left: -10vw;
+    }
+
+    .testimonials-section {
+        width: 90vw;
+    }
+
+    .testimonial-card {
+        width: 90vw;
+        margin-left: -10vw;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .content-section, .testimonials-section {
+        width: 90vw;
+        margin-top: 0vh;
+    }
+
+    .testimonials-section {
+        margin-top: 5vh;
+        margin-left: 15vw;
+    }
+}
